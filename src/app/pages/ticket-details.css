@@ -1,0 +1,26 @@
+.ticket-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-details h3 {
+  padding: 2rem 1rem;
+  text-transform: uppercase;
+}
+
+.ticket-details h3::before {
+  content: "📝 ";
+}
+
+.ticket-details .searching {
+}
+
+.ticket-details form button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+  text-transform: uppercase;
+}

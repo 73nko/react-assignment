@@ -1,0 +1,74 @@
+.toaster {
+  margin: 4rem auto;
+  padding: 1rem 1.5rem;
+  width: 50%;
+  min-width: 500px;
+  position: absolute;
+  left: 50%;
+  top: -3.5rem;
+  transform: translateX(-50%);
+}
+
+.toaster button {
+  width: 20px;
+  height: 30px;
+  background-color: transparent;
+  transition: all 200ms;
+  border-radius: 50%;
+  padding: 0.2rem 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.7rem;
+}
+
+.toaster.error {
+  background-color: #cc000020;
+  color: #cc000090;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.toaster.error button {
+  background-color: transparent;
+  box-shadow: 0 0 6px 3px #cc000090;
+}
+
+.toaster.error button:hover {
+  box-shadow: 0 0 12px 5px #cc000090;
+}
+
+.toaster.warning {
+  background-color: #ffcc0020;
+  color: #aa8a08;
+  border: 1px solid sandybrown;
+  border-radius: 5px;
+}
+
+.toaster.warning button {
+  background-color: transparent;
+  box-shadow: 0 0 6px 3px #aa8a08;
+}
+
+.toaster.warning button:hover {
+  box-shadow: 0 0 12px 5px #aa8a08;
+}
+
+.toaster.success {
+  background-color: cornflowerblue;
+  color: darkblue;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.toaster.success button {
+  background-color: transparent;
+  box-shadow: 0 0 6px 3px darkblue;
+}
+
+.toaster.success button:hover {
+  box-shadow: 0 0 12px 5px darkblue;
+}
